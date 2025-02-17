@@ -2,7 +2,7 @@
 //for min infinity = Integer.MIN_VALUE
 //for max infinity = Integer.MAX_VALUE
 
-public class tenty4 {
+public class twenty4 {
     public static int largest(int num[]){
         int large=  Integer.MIN_VALUE;
         for (int i = 0; i < num.length; i++) {
