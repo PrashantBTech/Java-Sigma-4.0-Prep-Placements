@@ -1,5 +1,5 @@
 import java.util.*;
-
+//2d array , printing and searching {basic one}
 public class thirtyseven37 {
     public static boolean search(int arr[][], int key){
         for (int i = 0; i < arr.length; i++) {
