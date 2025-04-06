@@ -18,7 +18,7 @@ I solve **at least one Java problem daily** and update this repository consisten
 - Document and share my learning journey
 
 ## 🔗 Useful Links
-- [Apna College Sigma 4.0]
+- Apna College Sigma 4.0
 - [My GitHub Profile](https://github.com/PrashantBTech)
 
 ## 🙌 Let's Connect
