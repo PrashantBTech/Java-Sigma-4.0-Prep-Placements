@@ -1,6 +1,5 @@
 # 🧠 Java Daily Practice – Sigma 4.0 🚀
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=PrashantBTech&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
 Welcome to my Java daily coding practice repository!  
 I'm currently learning from **Apna College's Sigma 4.0 Batch** as part of my **preparation for placements and internships**.
