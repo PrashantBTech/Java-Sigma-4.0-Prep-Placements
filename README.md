@@ -1,4 +1,5 @@
 # 🧠 Java Daily Practice – Sigma 4.0 🚀
+<img src="https://streak-stats.demolab.com?user=PrashantBTech&theme=radical" />
 
 
 Welcome to my Java daily coding practice repository!  
