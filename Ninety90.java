@@ -1,9 +1,12 @@
 // Linked List
+
 // Adding a node in Linked List,  TC: O(1)
 // printing the linked list, TC : O(n)
 // Removing node from Linked List
 // Iterative Search , TC:O(n)
 // Recursive Search,
+// Reversing the Linked List, TC: O(n)
+//Find and remove Nth node from End
 
 public class Ninety90 {
 
@@ -133,7 +136,7 @@ public class Ninety90 {
         return -1;
     }
 
-    public int helper(Node head, int key) {  // TC:O(n)
+    public int helper(Node head, int key) { // TC:O(n)
         if (head == null) {
             return -1;
         }
@@ -149,6 +152,44 @@ public class Ninety90 {
 
     public int rec_Search(int key) {
         return helper(head, key);
+    }
+
+    public void reverse() {
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+    public void delete_Nth_fromEnd(int n) {
+        // calculate size;
+        int sz = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            sz++;
+        }
+        // remove head, first node
+        if (n == sz) {
+            head = head.next;
+            return;
+        }
+        // sz-n
+        int i = 1;
+        int itofind = sz - n;
+        Node prev = head;
+        while (i < itofind) {
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
+        return;
     }
 
     public static void main(String[] args) {
@@ -176,6 +217,16 @@ public class Ninety90 {
         System.out.println("Iterative Searching in Linked List at idx: " + ll.itr_Search(10));
 
         System.out.println("Recursive Searching in Linked List at idx: " + ll.rec_Search(4));
+
+        ll.reverse();
+        ll.Printll();
+
+        ll.addLast(1);
+        ll.addLast(5);
+        ll.Printll();
+
+        ll.delete_Nth_fromEnd(3);
+        ll.Printll();
 
     }
 }
