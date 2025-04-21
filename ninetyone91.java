@@ -76,7 +76,7 @@ public class ninetyone91 {
 
     // -------------------------------------------------------------------------------
 
-    public Node findMid(Nodde head) { // using slow-fast approach
+    public Node findMid(Node head) { // using slow-fast approach
         Node slow = head;
         Node fast = head;
         while (fast != null && fast.next != null) {
@@ -88,7 +88,31 @@ public class ninetyone91 {
     }
 
     public boolean Checkpalindrome(){
-        
+        if (head == null || head.next == null) {
+            return true;
+        }
+        // find middle
+        Node mid = findMid(head);
+        // reverse 2nd half
+        Node curr = mid;
+        Node prev = null;
+        while (curr != null) {
+            Node next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node right = prev;
+        Node left = head;
+        // check if equal
+        while (right != null) {
+            if (left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
     }
 
     public static void main(String[] args) {
@@ -96,10 +120,11 @@ public class ninetyone91 {
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(3);
-        ll.addLast(4);
-        ll.addLast(5);
-        ll.addLast(6);
+        ll.addLast(3);
+        ll.addLast(2);
+        ll.addLast(1);
 
         ll.Printll();
+        System.out.println(ll.Checkpalindrome());
     }
 }
