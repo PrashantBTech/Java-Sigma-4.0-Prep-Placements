@@ -1,5 +1,5 @@
 // Implementing Linked List using Java Collection Framework
-
+// importing linked list and using operations like, add, remove print...
 import java.util.LinkedList;
 
 public class Ninetythree {
