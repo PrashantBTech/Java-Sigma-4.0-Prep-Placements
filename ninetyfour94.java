@@ -1,4 +1,4 @@
-// Merge sort
+// Merge sort program of Linked List
 
 public class ninetyfour94 {
     public static class Node {
