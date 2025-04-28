@@ -18,5 +18,9 @@ public class Ninetythree {
         ll.removeFirst();
         // print
         System.out.println(ll);
+        // printing individual data
+        for(Integer num : ll){
+            System.out.println(num);
+        }
     }
 }
