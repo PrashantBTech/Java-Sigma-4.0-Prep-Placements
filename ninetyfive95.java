@@ -1,6 +1,7 @@
 // Zig-Zag Linked List
 // 1->2->3->4->5 to
 // 1->5->2->4->3
+// 1-> n -> 2-> n-1 -> 3-> n-2.......
 
 import java.util.LinkedList;
 
