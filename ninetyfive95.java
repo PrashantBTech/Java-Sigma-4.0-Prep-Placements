@@ -51,6 +51,7 @@ public class ninetyfive95 {
         System.out.println("null");
     }
 
+//  The function for Zig Zag
 
     public void zigzag(){
         // find mid
