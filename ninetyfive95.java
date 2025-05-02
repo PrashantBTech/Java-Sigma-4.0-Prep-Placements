@@ -98,7 +98,9 @@ public class ninetyfive95 {
         ll.addLast(5);
 
         ll.printLL();
+
         ll.zigzag();
+        
         ll.printLL();
         
     }
