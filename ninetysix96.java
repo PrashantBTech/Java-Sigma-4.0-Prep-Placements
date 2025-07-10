@@ -59,6 +59,22 @@ public class ninetysix96 {
         System.out.println("null");
     }
 
+    // reverse the dll
+    public void reverse(){
+        Node curr = head;
+        Node prev = null;
+        Node next ;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            curr.prev = next;
+
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
     public static void main(String[] args) {
         ninetysix96 dll = new ninetysix96();
         dll.addFirst(5);
@@ -74,6 +90,9 @@ public class ninetysix96 {
 
         dll.printdl();
         System.out.println("Size : "+dll.size);
+
+        dll.reverse();
+        dll.printdl();
     }
 
 }
