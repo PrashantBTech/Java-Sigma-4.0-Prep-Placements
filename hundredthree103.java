@@ -1,6 +1,8 @@
 // Sock Span problem: Given the prices of a stock on different days. Find the span
-// span: it is the max no of consecutive days for which price <= todays price
+// span: it is the max no of consecutive days for which price <= todays price (price was less than or equals to the todays price)
 // span: i - prevHigh
+// ****************************************************************************
+
 
 import java.util.Stack;
 
