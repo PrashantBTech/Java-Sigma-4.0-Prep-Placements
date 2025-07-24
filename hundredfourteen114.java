@@ -3,8 +3,6 @@
 
 import java.util.*;
 
-import javax.swing.plaf.metal.MetalBorders.ScrollPaneBorder;
-
 public class hundredfourteen114 {
     public static void printNonRepeating(String str){
         int freq[]=new int[26]; // a-z
