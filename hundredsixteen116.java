@@ -1,3 +1,5 @@
+// Program for reversing the queue using stack 
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
