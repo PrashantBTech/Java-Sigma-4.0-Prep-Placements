@@ -1,6 +1,6 @@
 // Heaps
 //  Weakest Soldier
-// Find the K weakest rows
+// Find the K weakest rows, where 1 is the soldire and 0 is the citizens
 
 import java.util.PriorityQueue;
 
