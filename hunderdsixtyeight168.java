@@ -1,5 +1,6 @@
 
 // startsWithProblem
+// verity wether the given words starts with given prefix
 
 public class hunderdsixtyeight168 {
     static class Node {
