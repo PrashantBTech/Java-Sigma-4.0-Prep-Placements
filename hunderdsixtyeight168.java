@@ -1,4 +1,3 @@
-
 // startsWithProblem
 // verity wether the given words starts with given prefix
 
